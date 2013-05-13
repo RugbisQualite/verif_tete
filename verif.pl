@@ -13,6 +13,9 @@ use subdivision;
 # 12.04.2013 : accpete en entrée les fichiers CSV et Aleph séquentiels
 #  ~~~~~~~ VERSIONS~~~~~~~~
 
+# romain.vanel@ujf-grenoble.fr
+# rugbis@ujf-grenoble.fr
+
 =head1 NAME
 subdiv_tete_de_vedette.pl
 =cut
