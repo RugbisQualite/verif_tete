@@ -60,7 +60,7 @@ Pas de problèmes 244451
 
 GNU/GPL
 
-
+=cut
 
 my $fichier_de_base = "xxxxxxxxx" ;
 
