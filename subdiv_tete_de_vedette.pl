@@ -65,9 +65,9 @@ GNU/GPL
 my $fichier_de_base = "xxxxxxxxx" ;
 
 
- my $cpt_total;
- my $cpt_nok ;
- my $cpt_ok ;
+ my $cpt_total = 0;
+ my $cpt_nok = 0 ;
+ my $cpt_ok = 0;
 
 
 
