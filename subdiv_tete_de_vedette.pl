@@ -64,6 +64,8 @@ GNU/GPL
 
 my $fichier_de_base = "xxxxxxxxx" ;
 
+my ($sec,$min,$hr,$mday,$mon,$year,$wday,$yday,$isdst) = localtime(time);
+my $today = $mday . "-" . $mon . "--" . $hr . $min;
 
  my $cpt_total = 0;
  my $cpt_nok = 0 ;
@@ -119,7 +121,7 @@ my ($ligne_fichier_de_base_csv) = @_ ;
 sub rapport {
   my ($ppn_auto,$alp) = @_ ;
 
-  open(LISTE, ">>liste_erreurs.log") || die "Erreur E/S:$!\n";
+  open(LISTE, ">>liste_erreurs-$today.log") || die "Erreur E/S:$!\n";
    print LISTE "Erreur sur $ppn_auto dans $alp\n";
   close LISTE;
 }
@@ -156,7 +158,7 @@ close FICHIER_DE_BASE ;
     ;
 
 
-open(LOG, ">rapport.log") || die "Erreur E/S:$!\n";
+open(LOG, ">rapport-$today.log") || die "Erreur E/S:$!\n";
 print LOG "Recherches subdivisions employées en tetes de vedette :\n";
 print LOG "Total = $cpt_total\n" ;
 print LOG "Erreurs = $cpt_nok\n" ;
